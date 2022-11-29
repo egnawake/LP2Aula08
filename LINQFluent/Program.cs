@@ -21,7 +21,7 @@ namespace LINQFluent
 			IEnumerable<string> firstWordInYLines =
 				from line in lines
 				where line.Contains('Y')
-				select line.Trim().Split(' ')[0].ToUpper();
+				select line.Trim().Split(' ')[0].ToRandomCase();
 				
 			Console.WriteLine("First words in lines with a Y");
 			foreach (string s in firstWordInYLines)
